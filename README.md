@@ -1,5 +1,5 @@
 <h1 align="center">Heyo! 👋, I'm Akshit!</h1>
-<h3 align="center">A CS undergrad who loves to explore and build with code.</h3>
+<h3 align="center">A student who loves to explore and build with code.</h3>
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=akshit-a9&color=green" alt="profile views">
