@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="230" viewBox="0 0 880 230" role="img" aria-label="Akshit Sharma: embedded systems, firmware, IoT, FPGA">
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace; }
+    .trace { fill: none; stroke: #30363d; stroke-width: 1.5; stroke-linejoin: round; }
+    .via { fill: #0d1117; stroke: #484f58; stroke-width: 1.5; }
+    .pulse { fill: none; stroke: #3fb950; stroke-width: 1.5; stroke-linecap: round; stroke-dasharray: 10 400; }
+  </style>
+
+  <!-- window -->
+  <rect x="0.5" y="0.5" width="879" height="229" rx="10" fill="#0d1117" stroke="#30363d"/>
+  <circle cx="22" cy="20" r="5" fill="#30363d"/>
+  <circle cx="40" cy="20" r="5" fill="#30363d"/>
+  <circle cx="58" cy="20" r="5" fill="#30363d"/>
+  <text x="440" y="24" text-anchor="middle" font-size="12" fill="#7d8590">akshit@bench: ~</text>
+  <line x1="1" y1="40" x2="879" y2="40" stroke="#21262d"/>
+
+  <!-- prompt -->
+  <text x="32" y="82" font-size="15"><tspan fill="#3fb950">$</tspan><tspan fill="#e6edf3"> whoami</tspan></text>
+  <text x="32" y="124" font-size="32" font-weight="600" fill="#e6edf3">Akshit Sharma</text>
+  <text x="32" y="154" font-size="15" fill="#7d8590">embedded systems · firmware · iot · fpga</text>
+  <text x="32" y="198" font-size="15" fill="#3fb950">$</text>
+  <rect x="49" y="185" width="9" height="17" fill="#3fb950">
+    <animate attributeName="opacity" values="1;0" dur="1.1s" repeatCount="indefinite" calcMode="discrete"/>
+  </rect>
+
+  <!-- traces, left -->
+  <path class="trace" d="M678 110 H640 L620 90 H585"/>
+  <path class="trace" d="M678 125 H598"/>
+  <path class="trace" d="M678 140 H630 L610 160 H570"/>
+  <path class="trace" d="M678 155 H650 L632 173 V200"/>
+  <!-- traces, right -->
+  <path class="trace" d="M782 110 H815 L835 90 V62"/>
+  <path class="trace" d="M782 125 H852"/>
+  <path class="trace" d="M782 155 H808 L828 175 V202"/>
+  <!-- traces, top -->
+  <path class="trace" d="M712 83 V68 L697 53"/>
+  <path class="trace" d="M748 83 V60"/>
+
+  <!-- signal pulses -->
+  <path class="pulse" d="M585 90 H620 L640 110 H678">
+    <animate attributeName="stroke-dashoffset" from="10" to="-410" dur="3.2s" repeatCount="indefinite"/>
+  </path>
+  <path class="pulse" d="M782 125 H852">
+    <animate attributeName="stroke-dashoffset" from="10" to="-410" dur="4.1s" begin="1.2s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- vias -->
+  <circle class="via" cx="585" cy="90" r="3.5"/>
+  <circle class="via" cx="598" cy="125" r="3.5"/>
+  <circle class="via" cx="570" cy="160" r="3.5"/>
+  <circle class="via" cx="632" cy="200" r="3.5"/>
+  <circle class="via" cx="835" cy="62" r="3.5"/>
+  <circle class="via" cx="852" cy="125" r="3.5"/>
+  <circle class="via" cx="828" cy="202" r="3.5"/>
+  <circle class="via" cx="697" cy="53" r="3.5"/>
+  <circle class="via" cx="748" cy="60" r="3.5"/>
+
+  <!-- chip -->
+  <g stroke="#484f58" stroke-width="1.5">
+    <line x1="678" y1="110" x2="690" y2="110"/><line x1="678" y1="125" x2="690" y2="125"/>
+    <line x1="678" y1="140" x2="690" y2="140"/><line x1="678" y1="155" x2="690" y2="155"/>
+    <line x1="770" y1="110" x2="782" y2="110"/><line x1="770" y1="125" x2="782" y2="125"/>
+    <line x1="770" y1="140" x2="782" y2="140"/><line x1="770" y1="155" x2="782" y2="155"/>
+    <line x1="712" y1="83" x2="712" y2="95"/><line x1="730" y1="83" x2="730" y2="95"/>
+    <line x1="748" y1="83" x2="748" y2="95"/>
+  </g>
+  <rect x="690" y="95" width="80" height="75" rx="4" fill="#161b22" stroke="#484f58" stroke-width="1.5"/>
+  <circle cx="699" cy="104" r="2" fill="#484f58"/>
+  <text x="730" y="137" text-anchor="middle" font-size="13" fill="#7d8590">a9</text>
+</svg>
